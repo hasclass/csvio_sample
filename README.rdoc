@@ -1,0 +1,11 @@
+== Sample App for csv.io API
+
+This sample app shows various ways of using the csv.io API for generating spreadsheets.
+
+All code is in the following files:
+
+- app/controllers/data_controller.rb - various connectivity examples
+- app/models/csvio_client.rb - a HTTMultiParty client
+- Gemfile - add the httmultiparty gem
+- config/routes.rb - add routes for data_controller actions
+
