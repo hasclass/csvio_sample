@@ -1,5 +1,4 @@
 class DataController < ApplicationController
-  API_KEY = ENV["CSVIO_API_KEY"] #|| raise "please provide CSVIO_API_KEY environment variable."
 
   def send_inline
     options = csvio_opts({
@@ -62,7 +61,7 @@ class DataController < ApplicationController
 
   def csvio_opts(opts)
     {
-      :basic_auth => {:username => API_KEY},
+      :basic_auth => {:username => CSVIO_API_KEY},
       :body => opts
     }
   end
