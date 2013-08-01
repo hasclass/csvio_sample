@@ -1,5 +1,8 @@
 class DataController < ApplicationController
 
+  def index
+  end
+
   def send_inline
     options = csvio_opts({
       :template => "empty",
