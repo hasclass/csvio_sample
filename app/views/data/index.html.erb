@@ -1,5 +1,9 @@
 <p>
-  <%= link_to "send_inline", "/data/send_inline" %>
+  <strong>Warning</strong> on public pages make sure that search engine bots don't crawl your export links.
+</p>
+
+<p>
+  <%= link_to "send_inline", "/data/send_inline", :method => :post %>
   Sends CSV as normal text in POST data. Like from a textarea field.
 </p>
 <p>

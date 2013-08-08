@@ -3,10 +3,10 @@ CsvioSample::Application.routes.draw do
 
   get "data" => "data#index"
 
-  get "data/send_inline" => "data#send_inline"
-  get "data/send_file" => "data#send_file"
-  get "data/send_url" => "data#send_url"
-  get "data/send_httpauth_url" => "data#send_httpauth_url"
+  post "data/send_inline" => "data#send_inline"
+  post "data/send_file" => "data#send_file"
+  post "data/send_url" => "data#send_url"
+  post "data/send_httpauth_url" => "data#send_httpauth_url"
 
   # Callback for csv.io
   get "data/httpauth_data" => "data#httpauth_data"

@@ -9,6 +9,7 @@ class DataController < ApplicationController
       :data => "Hello,World\nHello,Excel"
     })
     response = csvio_export(options)
+    # render text: response
     redirect_to response['url']
   end
 
@@ -55,7 +56,7 @@ class DataController < ApplicationController
     end
   end
 
-  # Returns hash: {"url" : "http://csv.io/download/..", "uuid" : ..}
+  # Returns hash: {"url" : "https://csv.io/download/..", "uuid" : ..}
   def csvio_export(options)
     response = CsvioClient.post('/export.json', options)
     Rails.logger.info(response.parsed_response)

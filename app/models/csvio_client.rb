@@ -1,5 +1,5 @@
 class CsvioClient
   include HTTMultiParty
-  base_uri "http://localhost:8080/api/v1"
+  base_uri "https://csv.io/api/v1"
 
 end
