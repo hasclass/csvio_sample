@@ -7,15 +7,15 @@
   Sends CSV as normal text in POST data. Like from a textarea field.
 </p>
 <p>
-  <%= link_to "send_file", "/data/send_file" %>
+  <%= link_to "send_file", "/data/send_file", :method => :post %>
   Sends CSV as a HTTP multipart file. Like you do when using a file field.
 </p>
 <p>
-  <%= link_to "send_url", "/data/send_url" %>
+  <%= link_to "send_url", "/data/send_url", :method => :post %>
   Sends a callback URL where the CSV data is located.
 
 </p>
 <p>
-  <%= link_to "send_httpauth_url", "/data/send_httpauth_url" %>
+  <%= link_to "send_httpauth_url", "/data/send_httpauth_url", :method => :post %>
   Supports URLs with HTTP Auth.
 </p>
