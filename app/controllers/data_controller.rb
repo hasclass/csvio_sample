@@ -52,7 +52,7 @@ class DataController < ApplicationController
 
   def authenticate_csvio!
     authenticate_or_request_with_http_basic do |username, password|
-      username == "user" && password == "secret"
+      username == "username" && password == "secret"
     end
   end
 
