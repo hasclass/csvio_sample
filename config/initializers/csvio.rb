@@ -11,5 +11,5 @@ E.g. by putting following line in your .bash_profile:
 
 ### ------------------------------------
 MSG
-  exit
+  # exit
 end
